@@ -1,8 +1,8 @@
-import React, { useCallback, useState, useEffect } from 'react';
-import { AppExtensionSDK } from '@contentful/app-sdk';
-import { PlainClientAPI } from 'contentful-management';
-import { Heading, Form, Paragraph, Flex } from '@contentful/f36-components';
-import { css } from '@emotion/css';
+import React, { useCallback, useState, useEffect } from "react";
+import { AppExtensionSDK } from "@contentful/app-sdk";
+import { PlainClientAPI } from "contentful-management";
+import { Heading, Form, Paragraph, Flex } from "@contentful/f36-components";
+import { css } from "@emotion/css";
 
 export interface AppInstallationParameters {}
 
@@ -43,8 +43,7 @@ const ConfigScreen = (props: ConfigScreenProps) => {
     (async () => {
       // Get current parameters of the app.
       // If the app is not installed yet, `parameters` will be `null`.
-      const currentParameters: AppInstallationParameters | null =
-        await props.sdk.app.getParameters();
+      const currentParameters: AppInstallationParameters | null = await props.sdk.app.getParameters();
 
       if (currentParameters) {
         setParameters(currentParameters);
@@ -57,7 +56,7 @@ const ConfigScreen = (props: ConfigScreenProps) => {
   }, [props.sdk]);
 
   return (
-    <Flex flexDirection="column" className={css({ margin: '80px', maxWidth: '800px' })}>
+    <Flex flexDirection="column" className={css({ margin: "80px", maxWidth: "800px" })}>
       <Form>
         <Heading>App Config</Heading>
         <Paragraph>Welcome to your contentful app. This is your config page.</Paragraph>
