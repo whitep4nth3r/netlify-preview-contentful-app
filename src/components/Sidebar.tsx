@@ -16,8 +16,8 @@ const NetlifySvg = () => {
       viewBox="0 0 256 256">
       <defs>
         <radialGradient id="footer-sample-full-0" cx="50%" cy="-50%" r="100%" fx="50%" fy="-50%">
-          <stop offset="0%" stop-color="#20C6B7"></stop>
-          <stop offset="100%" stop-color="#4D9ABF"></stop>
+          <stop offset="0%" stopColor="#20C6B7"></stop>
+          <stop offset="100%" stopColor="#4D9ABF"></stop>
         </radialGradient>
       </defs>
       <path
@@ -33,7 +33,11 @@ interface SidebarProps {
 }
 
 async function triggerBuildHook() {
-  await fetch("", { headers: { method: "POST" } });
+  try {
+    await fetch(`${process.env.REACT_APP_NETLIFY_BUILD_HOOK}`, { headers: { method: "POST" } });
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 const Sidebar = (props: SidebarProps) => {
