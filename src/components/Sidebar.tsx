@@ -34,7 +34,7 @@ interface SidebarProps {
 
 async function triggerBuildHook() {
   try {
-    const response = await fetch(`${process.env.REACT_APP_NETLIFY_BUILD_HOOK}`, {
+    await fetch(`${process.env.REACT_APP_NETLIFY_BUILD_HOOK}`, {
       method: "POST",
     });
   } catch (e) {
