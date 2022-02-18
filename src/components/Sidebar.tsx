@@ -34,7 +34,9 @@ interface SidebarProps {
 
 async function triggerBuildHook() {
   try {
-    await fetch(`${process.env.REACT_APP_NETLIFY_BUILD_HOOK}`, { headers: { method: "POST" } });
+    const build = await fetch(`./netlify/functions/deployme`);
+    const res = await build.json();
+    console.log(res);
   } catch (e) {
     console.log(e);
   }
