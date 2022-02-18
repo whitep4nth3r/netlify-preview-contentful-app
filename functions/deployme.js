@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
-export const handler = async (event, context) => {
-  const response = await fetch(process.env.REACT_APP_NETLIFY_BUILD_HOOK, {
+exports.handler = async function (event, context) {
+  const response = await fetch(process.env.DEPLOY_ME_URL, {
     method: "POST",
   });
 
