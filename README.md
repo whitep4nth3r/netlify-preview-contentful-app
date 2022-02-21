@@ -34,7 +34,7 @@ Read the blog post (IN PROGRESS!)
    new preview branch
 3. Generate a [build hook in Netlify](https://docs.netlify.com/configure-builds/build-hooks/) to deploy to your preview
    branch
-4. Set `REACT_APP_NETLIFY_BUILD_HOOK` as the value of the new build hook
+4. In your build and deploy settings, set `REACT_APP_NETLIFY_BUILD_HOOK` as the value of the new build hook
 
 ### `REACT_APP_NETLIFY_URL`
 
