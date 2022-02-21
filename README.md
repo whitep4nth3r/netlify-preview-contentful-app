@@ -25,9 +25,7 @@ Read the blog post (IN PROGRESS!)
 
 ### 2. Deploy the app to Netlify with the following environment variables
 
-```text
-REACT_APP_NETLIFY_BUILD_HOOK
-```
+### `REACT_APP_NETLIFY_BUILD_HOOK`
 
 1. Configure a branch deploy on your site that is not your production branch (e.g. `preview`). Ensure the code is
    adapted on the preview branch to
@@ -35,9 +33,7 @@ REACT_APP_NETLIFY_BUILD_HOOK
 2. Generate a build hook in Netlify to deploy to your preview branch.
 3. Set `REACT_APP_NETLIFY_BUILD_HOOK` as the value of the new build hook.
 
-```text
-REACT_APP_NETLIFY_URL
-```
+### `REACT_APP_NETLIFY_URL`
 
 1. This environment variable provides a value to the app that lets you open your Netlify dashboard straight from the
    Contentful UI.
