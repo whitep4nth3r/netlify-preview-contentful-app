@@ -59,7 +59,7 @@ const ConfigScreen = (props: ConfigScreenProps) => {
     <Flex flexDirection="column" className={css({ margin: "80px", maxWidth: "800px" })}>
       <Form>
         <Heading>App Config</Heading>
-        <Paragraph>Welcome to your contentful app. This is your config page.</Paragraph>
+        <Paragraph>Welcome to Netlify Preview Contentful App. Nothing to see here!</Paragraph>
       </Form>
     </Flex>
   );
