@@ -38,9 +38,8 @@ Read the blog post (IN PROGRESS!)
 
 ### `REACT_APP_NETLIFY_URL`
 
-1. This environment variable provides a value to the app that lets you open your Netlify dashboard straight from the
-   Contentful UI.
-2. Set `REACT_APP_NETLIFY_URL` as the URL you wish to open.
+This environment variable provides a value to the app that lets you open your Netlify dashboard straight from the
+Contentful UI. Set `REACT_APP_NETLIFY_URL` as the URL you wish to open.
 
 ### 3. Install the app to Contentful
 
