@@ -44,8 +44,8 @@ async function triggerBuildHook() {
 
 const Sidebar = (props: SidebarProps) => {
   return (
-    <Stack flexDirection="column" spacing="spacingM" onClick={triggerBuildHook}>
-      <Button size="medium" isFullWidth>
+    <Stack flexDirection="column" spacing="spacingM">
+      <Button size="medium" isFullWidth onClick={triggerBuildHook}>
         {NetlifySvg()} Build Netlify Preview
       </Button>
       <Button as="a" href={process.env.REACT_APP_NETLIFY_URL} target="_blank" size="medium" isFullWidth>
