@@ -48,7 +48,7 @@ const Sidebar = (props: SidebarProps) => {
       <Button size="medium" isFullWidth>
         {NetlifySvg()} Build Netlify Preview
       </Button>
-      <Button as="a" href="https://app.netlify.com/teams/theclaw/overview" target="_blank" size="medium" isFullWidth>
+      <Button as="a" href={process.env.REACT_APP_NETLIFY_URL} target="_blank" size="medium" isFullWidth>
         {NetlifySvg()} Open Netlify
       </Button>
     </Stack>
