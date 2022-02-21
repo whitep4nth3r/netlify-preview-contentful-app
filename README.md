@@ -32,7 +32,8 @@ Read the blog post (IN PROGRESS!)
    [fetch and build draft content](https://www.contentful.com/developers/docs/references/content-preview-api/)
 2. Set up a [branch deploy on Netlify](https://docs.netlify.com/site-deploys/overview/#branch-deploy-controls) for your
    new preview branch
-3. Generate a build hook in Netlify to deploy to your preview branch
+3. Generate a [build hook in Netlify](https://docs.netlify.com/configure-builds/build-hooks/) to deploy to your preview
+   branch
 4. Set `REACT_APP_NETLIFY_BUILD_HOOK` as the value of the new build hook
 
 ### `REACT_APP_NETLIFY_URL`
