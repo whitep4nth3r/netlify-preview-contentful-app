@@ -19,7 +19,7 @@ but all of the same concepts apply.
 
 Read the blog post (IN PROGRESS!)
 
-## To use
+## To use this app in your Contentful space
 
 ### 1. Fork this repository to your GitHub account
 
