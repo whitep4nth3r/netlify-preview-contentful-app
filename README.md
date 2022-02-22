@@ -17,7 +17,7 @@ but all of the same concepts apply.
 
 ## Want a full tutorial to use this app?
 
-Read the blog post (IN PROGRESS!)
+[Read the blog post](https://ntl.fyi/3vcrRDl)
 
 ## To use this app in your Contentful space
 
